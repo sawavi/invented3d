@@ -38,17 +38,26 @@ body {
 /* Work Section */
 #work {
   background-color: #f8f9fa;
+  padding: 60px 0;
 }
 
 #work h2 {
   font-size: 2.2rem;
   font-weight: 600;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
+/* Work Cards */
 #work .event-card {
-  border-radius: 8px;
+  border-radius: 12px;
   overflow: hidden;
   position: relative;
+  transition: box-shadow 0.3s ease;
+}
+
+#work .event-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 #work .event-card img {
@@ -56,7 +65,12 @@ body {
   height: 250px;
   object-fit: cover;
   display: block;
-  border-radius: 6px;
+  border-radius: 12px;
+  transition: transform 0.4s ease;
+}
+
+#work .event-card:hover img {
+  transform: scale(1.05);
 }
 
 #work .event-card figcaption.overlay {
@@ -71,6 +85,16 @@ body {
 
 #work .event-card:hover figcaption.overlay {
   background: rgba(0, 0, 0, 0.8);
+}
+
+#work .event-card h5 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+#work .event-card p {
+  font-size: 0.9rem;
+  margin: 5px 0 0;
 }
 
 /* Contact Section */
