@@ -1,116 +1,108 @@
-/* General Reset and Typography */
+/* General Styles */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-  background-color: #ffffff;
+  padding-top: 70px; /* space for fixed navbar */
 }
 
 /* Navbar */
-.navbar {
-  background-color: rgba(0, 0, 0, 0.85);
-  padding: 1rem 0;
-}
-
 .navbar-brand {
   font-weight: bold;
   font-size: 1.5rem;
 }
 
 .navbar-nav .nav-link {
-  margin-left: 1rem;
-  font-size: 1rem;
+  margin-left: 15px;
 }
 
-/* Carousel */
-.carousel-item img {
-  height: 100vh;
-  object-fit: cover;
-}
-
-.carousel-caption {
-  bottom: 20%;
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(to right, #222, #444);
   color: white;
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+  padding: 120px 0;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
 }
 
 /* Work Section */
 #work {
-  background-color: #f8f9fa;
+  background-color: #f9f9f9;
 }
 
-#work h2 {
-  font-size: 2.2rem;
-  font-weight: 600;
+.work-card {
+  transition: transform 0.3s ease;
 }
 
-#work .event-card {
-  border-radius: 8px;
+.work-card:hover {
+  transform: translateY(-5px);
+}
+
+.image-wrapper {
   overflow: hidden;
-  position: relative;
+  border-radius: 15px;
 }
 
-#work .event-card img {
-  width: 100%;
-  height: 250px;
+.image-wrapper img {
+  transition: transform 0.4s ease;
+  border-radius: 15px;
+  max-height: 200px;
   object-fit: cover;
-  display: block;
-  border-radius: 6px;
 }
 
-#work .event-card figcaption.overlay {
-  position: absolute;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.6);
-  color: #ffffff;
-  width: 100%;
-  padding: 10px 15px;
-  transition: background 0.3s;
+.image-wrapper:hover img {
+  transform: scale(1.05);
 }
 
-#work .event-card:hover figcaption.overlay {
-  background: rgba(0, 0, 0, 0.8);
+.work-card h5 {
+  margin-top: 10px;
+  font-weight: 500;
+  color: #333;
 }
 
 /* Contact Section */
 .contact-section {
   padding: 60px 0;
   background-color: #222;
-  color: #fff;
+  color: white;
 }
 
 .contact-section h2 {
   font-size: 2rem;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
-.contact-section .contact-info p,
-.contact-section .social-icons i {
-  font-size: 1rem;
+.contact-section p {
+  font-size: 1.1rem;
 }
 
-.contact-section .social-icons a {
-  color: #00d9ff;
+.social-icons a {
   font-size: 1.5rem;
-  transition: color 0.3s;
+  color: white;
+  transition: color 0.3s ease;
 }
 
-.contact-section .social-icons a:hover {
-  color: #ffffff;
+.social-icons a:hover {
+  color: #0d6efd;
 }
 
-/* Responsive Adjustments */
+/* Responsive Tweaks */
 @media (max-width: 768px) {
-  .carousel-caption h1 {
-    font-size: 1.5rem;
+  .hero-section h1 {
+    font-size: 2rem;
   }
 
-  #work .event-card img {
-    height: 200px;
+  .hero-section p {
+    font-size: 1rem;
   }
 
-  .contact-section .social-icons {
-    font-size: 1.2rem;
+  .work-card h5 {
+    font-size: 1rem;
   }
 }
