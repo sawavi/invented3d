@@ -25,7 +25,7 @@ body {
 
 /* Home Section */
 #home {
-  height: 50vh;
+  height: 70vh;
   overflow: hidden;
 }
 
@@ -152,6 +152,6 @@ body {
   }
 
   #home {
-    height: 60vh; /* Slightly taller on small screens */
+    height: 50vh; /* Slightly taller on small screens */
   }
 }
