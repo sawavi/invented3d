@@ -23,12 +23,25 @@ body {
   font-size: 1rem;
 }
 
-/* Carousel */
-.carousel-item img {
-  height: 100vh;
+/* Home Section */
+#home {
+  height: 50vh;
+  overflow: hidden;
+}
+
+#heroCarousel,
+#heroCarousel .carousel-inner,
+#heroCarousel .carousel-item {
+  height: 100%;
+}
+
+#heroCarousel img {
+  height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 
+/* Carousel Caption */
 .carousel-caption {
   bottom: 20%;
   color: white;
@@ -136,5 +149,9 @@ body {
 
   .contact-section .social-icons {
     font-size: 1.2rem;
+  }
+
+  #home {
+    height: 60vh; /* Slightly taller on small screens */
   }
 }
