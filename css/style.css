@@ -50,8 +50,13 @@ body {
   width: 100%;
   left: 0;
   right: 0;
-  text-align: left;
+  text-align: center; /* ✅ center-align the text horizontally */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end; /* ✅ push content to the bottom */
 }
+
 
 /* Work Section */
 #work {
