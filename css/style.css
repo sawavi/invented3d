@@ -152,6 +152,6 @@ body {
   }
 
   #home {
-    height: 40vh; /* Slightly taller on small screens */
+    height: 35vh; /* Slightly taller on small screens */
   }
 }
