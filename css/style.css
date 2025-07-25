@@ -43,9 +43,14 @@ body {
 
 /* Carousel Caption */
 .carousel-caption {
-  bottom: 20%;
-  color: white;
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+  bottom: 0;
+  top: auto;
+  background: rgba(0, 0, 0, 0.4); /* Optional: dark background for readability */
+  padding: 1rem;
+  width: 100%;
+  left: 0;
+  right: 0;
+  text-align: left;
 }
 
 /* Work Section */
@@ -139,10 +144,18 @@ body {
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-  .carousel-caption h1 {
-    font-size: 1.5rem;
+  .carousel-caption {
+    font-size: 0.9rem;
+    padding: 0.75rem 1rem;
   }
 
+  .carousel-caption h1 {
+    font-size: 1.2rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.9rem;
+  }
   #work .event-card img {
     height: 200px;
   }
