@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sawavi.github.io/invented3d/sitemap.xml
